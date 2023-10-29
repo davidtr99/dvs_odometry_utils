@@ -1,0 +1,20 @@
+image_width: 640
+image_height: 480
+camera_name: DVXplorer-DXA00253
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [654.7368489148778, 0, 290.3861470852912, 0, 654.0238616641774, 246.6526243856013, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.3582714402466012, 0.173021003777311, -0.0002632896255870183, -0.001138561059427516, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [594.8882527084643, 0, 284.0310994914976, 0, 0, 621.1003733939242, 247.3257324628033, 0, 0, 0, 1, 0]

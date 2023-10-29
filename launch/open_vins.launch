@@ -1,0 +1,16 @@
+<launch>
+	<include file="$(find ov_msckf)/launch/subscribe.launch">
+		<arg name="config_path" value="$(find dvs_odometry_utils)/config/open_vins_params/estimator_config.yaml"/>
+		<arg name="max_cameras" value="1"/>
+		<arg name="use_stereo" value="false"/>
+	</include>
+
+	<!-- odom -> global (open-vins origin) -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_2_global"  output="screen" respawn="true" 
+    args="0.0 0.0 0.0 3.14151 0.0 0.0 odom global"/>
+    <!--
+        Note:
+        global frame is the reference frame for open-vins odometry algorithm, so in our coordinate system 
+		it coincides with the odom frame.
+    -->
+</launch>
