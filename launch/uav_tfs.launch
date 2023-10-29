@@ -4,11 +4,11 @@
    <arg name="CAM_PITCH" value="0.0872665"/>
 
    <!--
-						base_link
-							|
+					base_link
+					    |
 				____________|____________
-				|						|
-			dvs_sensor				fcu (Pixhawk)
+				|			|
+			dvs_sensor			fcu (Pixhawk)
 				|							
 		dvs_sensor_optical
 
