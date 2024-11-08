@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find events_video_reconstructor)/launch/node.launch">
+		<arg name="output_frequency" value="-1"/>
+		<arg name="events_topic" value="/dvs/events"/>
+		<arg name="video_topic" value="/dvs/reconstructed_image"/>
+	</include>
+</launch>
